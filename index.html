@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1 id="title">Guess the Number</h1>
+
+    <div class="controls">
+      <label for="level">Level:</label>
+      <select id="level">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button id="languageToggle">🌐 বাংলা</button>
+    </div>
+
+    <p id="instruction">Guess a number between 1 and 100</p>
+    <input type="number" id="guessInput" />
+    <button id="checkBtn">Check</button>
+    <p id="message"></p>
+    <p id="timer">⏱️ 30s</p>
+    <button id="restartBtn">🔄 Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
